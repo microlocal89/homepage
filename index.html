@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microlocal Homepage</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!--html内でtex記述できるように設定したもの-->
+    <!--
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>-->
+    <!--html内でtex記述できるように設定したもの-->
+
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+</head>
+
+
+
+
+
+
+<body>
+
+    <header>
+        <h1>Microlocal Homepage</h1>
+        <nav class="gnav">
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="bunsyou.html">心に残った文章</a></li>
+                <li><a href="pc-Tips.html">PC周りのTips集</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <main>
+
+        <h2>自己紹介</h2>
+
+        <p>
+            　1991年生まれ．修士（理学）．高1から高2にかけて三角関数の素晴らしさを実感．加法定理 \(\sin(\alpha + \beta) = \sin \alpha \cos \beta + \cos \alpha \sin \beta\) 等から出る種々の変換公式に格好良さを感じた．特にターニングポイントだったのは物理の授業で斜方投射を習った時である．物体の運動を三角関数を用いて水平方向・鉛直方向へ分解できること，また，一番遠くに飛ばせる投げ上げ角度が45度であることが三角関数の計算で導けることに痛く感動した．この経験から現象を数式で表すことの美しさを知り，より深く学んでみたいとの思いから，大学で数学・物理を学ぶことに決めた．学部では解析学に重きをおきながら勉強し，修士時代は緩増加超関数の枠組における超局所解析の周辺について取り組んでいた．このホームページでは，興味のある数学について勝手にレビューしていきたい．多くは自己満足のためのものである．また，情報を集めておく場所としても利用する．
+        </p>
+
+
+        <p>
+            <strong>興味のある分野：</strong> 超局所解析，半古典解析，時間周波数解析，幾何解析，数理物理
+            
+            $$
+            T_{\varphi, a}u(x) = (2 \pi)^{-d} \iint_{\mathbb{R}^{2d}} e^{i \varphi(x,y,\xi)} a(x,y,\xi) u(y) \, dy d\xi
+            $$
+
+            $$
+            \mathrm{Op}_{h}^{w}(a)u(x) = (2 \pi h)^{-d} \iint_{\mathbb{R}^{2d}} e^{i (x-y) \cdot\xi /h } a \Bigl(
+            \frac{x+y}{2},\xi \Bigr) u(y) \, dy d\xi
+            $$
+
+            $$
+            WF_G(Pu) \subset WF_G(u) \subset WF_G(Pu) \cup \mathrm{Char}P
+
+            $$
+        </p>
+
+        
+        
+
+        <a name="micro"></a>
+        
+        <h2>超局所解析</h2>
+
+
+
+
+        <h3>Gabor波面集合と偏微分方程式の解の特異性伝播定理</h3>
+
+        <p>
+            　時間周波数解析と超局所解析が融合した研究について調べていたところ，次の論文
+        <ul>
+            <li>L. Rodino, and P. Wahlberg. "The Gabor wave front set." Monatshefte f&uuml;ur Mathematik 173.4 (2014):
+                625-655.
+                <a href="https://link.springer.com/article/10.1007/s00605-013-0592-0">Journal website</a>
+                <a href="https://arxiv.org/abs/1207.5628">arxiv</a>
+            </li>
+        </ul>
+        を見つけた．1991年，<a
+            href="https://link.springer.com/chapter/10.1007/BFb0085123">H&ouml;rmander</a>は緩増加超関数の遠方での減衰を含む超局所特異性を記述するために，Weyl量子化を用いて<strong>大域的波面集合</strong>を導入した．（この本はFBI変換の参考文献として読んだことがあったので再会できて嬉しくなった．）上記論文は大域的波面集合を短時間Fourier変換で特徴づけ，<strong>Gabor波面集合</strong>と名付けている．またいくつかの（超）関数のGabor波面集合を計算しており，特にchirp \( e^{i x^{2}} \) については（例えばH&ouml;rmanderの4巻本にあるような）既存の波面集合との差異を明らかにしている．<!--この論文を勉強したときにまとめたノートへのリンクは<a
+            href="The_Gabor_wave_front_set.pdf">こちら</a>．-->
+        </p>
+        <p>
+            　よってGabor波面集合は二次式を肩に持つ指数関数と相性が良さそうである．Gabor波面集合を偏微分方程式の解の特異性伝播現象へ応用した論文の一つに
+        <ul>
+            <li>
+                K. Pravda‐Starov, L. Rodino, and P. Wahlberg. "Propagation of Gabor singularities for Schrödinger
+                equations
+                with quadratic Hamiltonians." Mathematische Nachrichten 291.1 (2018): 128-159.
+                <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/mana.201600410">Journal website</a>
+                <a href="https://arxiv.org/abs/1411.0251">arxiv</a>
+            </li>
+        </ul>
+        がある．この論文は次の形の偏微分方程式
+        $$
+        \partial_{t}u(t,x) + q^{w}(x,D)u(t,x) = 0, \quad t \geq 0, \quad x \in \mathbb{R}^{d}, \quad u(0,\cdot) = u_{0}    
+        $$
+        を考察している．ここで \(q\) は実部が非負であるような，相空間上の複素数値二次形式である．この偏微分方程式の解は \( e^{-tq^{w}(x,D)} u_{0} \) と表現されるため，Gabor波面集合との相性が良いのではと個人的に推察するところである．また，主定理の証明の根本はH&ouml;rmanderやGrigis-Sj&ouml;strandの本に書かれているLagrangian distributionの波面集合の計算のようである．また，Lagrange部分空間等，複素シンプレクティック線形代数とでもいうべき議論がなされている．後半には題名にあるSchr&ouml;dinger方程式を含むさまざまな偏微分方程式の解のGabor波面集合の伝播定理が記されている．また，singular spaceなる概念によって相空間における超局所特異性を記述している．それにしてもquadratic Hamiltonianはかなり研究されているようだ．
+        </p>
+        <p>
+            　Gabor波面集合の定義における短時間Fourier変換の減衰を様々な意味に取ることで，それに応じた超局所特異性が記述できる．ここでは特に
+        <ul>
+            <li>
+                F. White. Propagation of Global Analytic Singularities for Schrödinger Equations with Quadratic
+                Hamiltonians. page arXiv:2102.01474, February 2021.
+                <a href="https://arxiv.org/abs/2102.01474">arxiv</a>
+            </li>
+        </ul>
+        を挙げたい．FBI変換を用いてGelfand-Shilov的な枠組での議論がなされている．FBI変換に付随した複素シンプレクティック変換と相関数の関係も論じられている．
+        </p>
+
+        <h3>Fourier積分作用素</h3>
+
+        <p>
+            　緩増加超関数の枠組におけるFourier積分作用素についても興味がある．例えば
+        <ul>
+            <li>
+                M. Cappiello, R. Schulz, and P. Wahlberg. "Conormal distributions in the Shubin calculus of
+                pseudodifferential operators." Journal of Mathematical Physics 59.2 (2018): 021502.
+                <a href="https://aip.scitation.org/doi/abs/10.1063/1.5022778">Journal website</a>
+                <a href="https://arxiv.org/abs/1702.03111">arxiv</a>
+            </li>
+        </ul>
+        はShubinシンボルの枠組でconormal distirbution（擬微分作用素の積分核が重要な例）を議論している．さらにその一般化であるLagrangian
+        distribution（Fourier積分作用素の積分核が重要な例）については
+        <ul>
+            <li>
+                M. Cappiello, R. Schulz, and P. Wahlberg. "Lagrangian distributions and Fourier integral operators with
+                quadratic phase functions and Shubin amplitudes." Publications of the Research Institute for
+                Mathematical
+                Sciences 56.3 (2020): 561-602.
+                <a href="https://ems.press/journals/prims/articles/16983">Journal website</a>
+                <a href="https://arxiv.org/abs/1802.04729">arxiv</a>
+            </li>
+            <li>
+                M. Cappiello, R. Schulz, and P. Wahlberg. "Shubin type Fourier integral operators and evolution
+                equations."
+                Journal of Pseudo-Differential Operators and Applications 11.1 (2020): 119-139.
+                <a href="https://link.springer.com/article/10.1007/s11868-019-00288-0">Journal website</a>
+                <a href="https://arxiv.org/abs/1805.10922">arxiv</a>
+            </li>
+        </ul>
+        にその基礎づけや発展方程式への応用が記載されている．また<a href="https://inspirehep.net/literature/1788899">この博士論文</a>も興味深い．
+        </p>
+
+
+        <h3>SGカリキュラス</h3>
+
+        <p>
+            　次の評価
+            $$
+            |\partial_{x}^{\alpha} \partial_{\xi}^{\beta} a(x, \xi)| \lesssim \langle x \rangle^{m-|\alpha|} \langle \xi \rangle^{n-|\beta|}
+            $$
+            を満たすシンボル \( a \in C^{\infty}(\mathbb{R}^{d} \times \mathbb{R}^{d}) \) はSGシンボルと呼ばれる．この枠組での擬微分作用素・Fourier積分作用素論，また \(\mathcal{S}\) 波面集合について興味がある．多項式係数の偏微分作用素が一つの重要な例である．例えば，
+
+        <ul>
+            <li>
+                S. Coriasco, and L. Maniccia. "Wave front set at infinity and hyperbolic linear operators with multiple
+                characteristics." Annals of Global Analysis and Geometry 24.4 (2003): 375-400.
+                <a href="https://link.springer.com/article/10.1023/A:1026241614722">Journal website</a>
+            </li>
+
+
+        </ul>
+        などが参考論文である．基礎事項については<a href="https://www.springer.com/gp/book/9783764385118">Nicola-Rodinoの本</a>もまとまっていて良いと思う．
+        </p>
+
+        <!--
+        <h3>Schr&ouml;dinger作用素のスペクトル・散乱理論</h3>
+
+        
+        <p>
+            もともと興味を持っていたのはこの分野．今でも面白い．Schr&ouml;dinger作用素をポテンシャルが無限遠で減衰すると仮定して，ラプラシアンの摂動ととらえる．この場合，ポテンシャルの影響は無限遠では無視できるとすれば，初期時刻に発射した粒子は自由粒子のように振る舞うだろう．
+        </p>
+        -->
+
+        <!--
+        <h3>トンネル効果</h3>
+
+        <p>
+            Zworskiの本Semiclassical Analysisにあるようにトンネル効果に興味がある．
+        </p>
+        -->
+
+        <!--
+        <h3>Dirichletラプラシアンのスペクトル理論</h3>
+
+        <p>
+            <a href="spectrum.pdf">こんなPDF</a>をつくってみた．
+        </p>
+        -->
+
+        <h3>超局所解析・半古典解析に関する海外の研究集会へのリンク集</h3>
+
+        <p>
+            <a href="http://crm.umontreal.ca/sms2021/en/#undefined_anchor">MICROLOCAL ANALYSIS: THEORY AND APPLICATIONS,
+                S&eacute;minaire de math&eacute;matiques sup&eacute;rieures 2021</a>
+            <br>
+            <a href="https://analysis-pde.org/pseudo-differential-conference/">Pseudo-Differential Conference</a>
+            <br>
+            <a href="http://personal.psu.edu/~tuk14/Potsdam2019/">Microlocal and Global Analysis, Interactions with
+                Geometry</a>
+            <br>
+            <a href="https://sites.northwestern.edu/snap2019/">Summer school in SEMICLASSICAL ANALYSIS</a>
+            <br>
+            <a href="http://www.mltf18.unito.it">MicroLocal and Time-Frequency Analysis 2018</a>
+        </p>
+
+        
+
+
+
+
+
+        <a name="gauge"></a>
+        <h2>ゲージ理論の幾何学と理論物理</h2>
+
+        <p>
+            　英語版wikipediaの<a href="https://en.wikipedia.org/wiki/Gauge_theory_(mathematics)#Dictionary_of_mathematical_and_physical_terminology">Gauge
+                theory (mathematics)</a>が非常に参考になる．Donaldson理論を解説した
+
+        <ul>
+            <li>
+                D. S. Freed, and K. K. Uhlenbeck. <a href="https://www.springer.com/gp/book/9781461397052">Instantons
+                    and
+                    four-manifolds</a>. Vol. 1. Springer Science & Business Media, 1991.
+            </li>
+            
+        </ul>
+            は解析的な議論も載っているバイブルだそうだ．そして坂本眞人「<a href="https://www.shokabo.co.jp/mybooks/ISBN978-4-7853-2511-4.htm">場の量子論</a>」は名著だ．また位相的場の理論にも大変興味がある．結び目理論とも関連があるようだ．（Jones多項式など）
+        </p>
+
+        <p>
+            <a href="https://www.math.nagoya-u.ac.jp/~shinichiroh/">松尾信一郎先生のホームページ</a>  特に雑記帳のページに大変有用な情報が載っている．
+
+        </p>
+
+
+        <hr>
+        <p style="text-align: right">
+            <a href="index.html">Home</a>
+        </p>
+    
+
+
+
+
+
+
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+    /* サイト全体のフォント指定 */
+/*
+body{
+    font-family: "Selif";
+}
+*/
+
+
+h1  {
+    font-family: "Helvetica" ;
+}
+h2  {
+    font-family: "Helvetica" ;
+      /*線の種類（実線） 太さ 色*/
+/*    border-bottom: solid 3px black;*/
+/*    padding: 0.5em;/*文字周りの余白*/
+/*    color: #010101;/*文字色*/
+/*    background: #eaf3ff;/*背景色*/
+    border-bottom: solid 3px blue;/*下線*/
+/*    border-left: solid 5px black;/*左線*/
+}
+
+h3  {
+    font-family: "Helvetica" ;
+}
+
+strong  {
+    font-family: "Helvetica" ;
+}
+body {
+/*    padding-top: 30px; /* ヘッダーの後ろに要素が隠れないようにするため */
+}
+    
+header {
+    width: 100%; /* 幅いっぱいを指定 */
+    height: 50px; /* 高さを50pxに指定 */
+    background: #CCC; /* 背景色にグレーを指定 */
+    padding: 0px 5px; /* ヘッダーに上下左右それぞれ余白を指定 */
+/*    box-sizing: border-box; /* padding分を含んで幅を100%にするため */
+/*    position: fixed; /* ウィンドウを基準に画面に固定 */
+    top: 0; /* 上下の固定位置を上から0pxにする */
+    left: 0; /* 左右の固定位置を左から0pxにする */
+    display: flex; /* 中の要素を横並びにする */
+    align-items: center; /* 中の要素を上下中央に並べる */
+}
+    
+header .gnav .menu {
+    display: flex; /* 中の要素を横並びにする */
+}
+    
+header .gnav .menu li {
+    list-style: none; /* リストの[・]を消す */
+}
+    
+header .gnav .menu li + li {
+    margin-left: 20px; /* メニューそれぞれに間隔をあけるため */
+}
+    
+main {
+    height: 100vw; /* スクロールの演出を見れるようにmainに高さを指定 */
+}
+
