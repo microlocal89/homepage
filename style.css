@@ -24,6 +24,10 @@ h3  {
     font-family: "Helvetica" ;
 }
 
+p   {
+    text-indent: 1em;
+}
+
 strong  {
     font-family: "Helvetica" ;
 }
