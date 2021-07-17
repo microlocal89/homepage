@@ -31,9 +31,11 @@ p   {
 strong  {
     font-family: "Helvetica" ;
 }
+
+/*
 body {
-/*    padding-top: 30px; /* ヘッダーの後ろに要素が隠れないようにするため */
-}
+    padding-top: 30px; /* ヘッダーの後ろに要素が隠れないようにするため */
+
     
 header {
     width: 100%; /* 幅いっぱいを指定 */
@@ -62,5 +64,18 @@ header .gnav .menu li + li {
     
 main {
     height: 100vw; /* スクロールの演出を見れるようにmainに高さを指定 */
+}
+
+footer {
+    width: 100%;
+    height: 20px; 
+    text-align: center;
+/*    padding: 0px 0;*/
+    background-color: #CCC;
+    position: absolute;/*←絶対位置*/
+    bottom: 0; /*下に固定*/
+}
+  .footer-text {
+    color: #fff;
 }
 
